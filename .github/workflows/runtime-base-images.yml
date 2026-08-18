@@ -39,7 +39,7 @@ jobs:
       RUNTIME_BASE_IMAGE_ARCHIVE: "runtime-base-images.tar"
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Configure runtime base images
         id: configure-runtime-base-images
@@ -102,7 +102,7 @@ jobs:
       contents: read
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Prune superseded runtime base image caches
         shell: bash
